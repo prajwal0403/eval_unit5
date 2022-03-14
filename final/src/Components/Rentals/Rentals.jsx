@@ -7,7 +7,7 @@ export const Rentals = () => {
 const [ data , setData] = useState([])
 
 useEffect(() =>{
-  axios.get("http://localhost:3001/houses").then((res)=>{
+  axios.get("http://localhost:8080/houses").then((res)=>{
     setData(res.data)
   })
 

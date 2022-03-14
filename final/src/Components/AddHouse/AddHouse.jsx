@@ -30,7 +30,7 @@ const handleInput = (e) =>{
 const handleSubmit = (e) =>{
   try{
     e.preventDefault();
-    axios.post("http://localhost:3001/houses" , info).then(() =>{
+    axios.post("http://localhost:8080/houses" , info).then(() =>{
       alert("Done")
     })
   }catch(err){
